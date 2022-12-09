@@ -4,10 +4,15 @@ import com.threadingbasics.resource.SharedProductResource;
 import org.springframework.stereotype.Component;
 
 @Component
-public class BuyBook extends Thread {
+public class BuyBook implements Runnable {
+
+//    this class implements Runnable interface so, we need to create a thread from its object
+//    we can then start the thread
+//    so this is not the best approach to create threads
+
     SharedProductResource sharedProductResource = null;
 
-    public void BuyBook(SharedProductResource sharedProductResource) {
+    public BuyBook(SharedProductResource sharedProductResource) {
         this.sharedProductResource = sharedProductResource;
     }
 
