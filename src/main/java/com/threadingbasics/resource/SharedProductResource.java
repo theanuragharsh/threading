@@ -1,8 +1,11 @@
 package com.threadingbasics.resource;
 
+import org.springframework.stereotype.Component;
+
 import java.util.HashMap;
 import java.util.Map;
 
+@Component
 public class SharedProductResource {
 
     private Map<String, Integer> products = new HashMap<String, Integer>();

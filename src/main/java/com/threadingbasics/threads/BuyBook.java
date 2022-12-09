@@ -1,7 +1,9 @@
 package com.threadingbasics.threads;
 
 import com.threadingbasics.resource.SharedProductResource;
+import org.springframework.stereotype.Component;
 
+@Component
 public class BuyBook extends Thread {
     SharedProductResource sharedProductResource = null;
 
