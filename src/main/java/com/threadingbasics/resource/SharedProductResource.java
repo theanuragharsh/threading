@@ -14,4 +14,5 @@ public class SharedProductResource {
         products.put("Ruler Scales", 10);
     }
 
+
 }
