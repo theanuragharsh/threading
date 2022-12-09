@@ -14,7 +14,7 @@ public class SharedProductResource {
         products.put("Ruler Scales", 10);
     }
 
-    public String buyProduct(String key) {
+    public synchronized String buyProduct(String key) {
         if (products.containsKey(key)) {
             Integer quantity = products.get(key);
             if (!products.get(key).equals(0)) {
