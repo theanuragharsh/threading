@@ -15,6 +15,7 @@ public class SharedProductResource {
         products.put("Pencil", 50);
         products.put("Notebook", 150);
         products.put("Ruler Scales", 10);
+        products.putIfAbsent("Book", 1);
     }
 
     public synchronized String buyProduct(String key) {
@@ -22,10 +23,10 @@ public class SharedProductResource {
             Integer quantity = products.get(key);
             if (!products.get(key).equals(0)) {
                 products.put(key, quantity - 1);
-                return "ORDER PLACED SUCCESSFULLY for item :" + key + " is out for delivery." + Thread.currentThread().getName();
+                return "ORDER PLACED SUCCESSFULLY for item :" + key + " is out for delivery. " + Thread.currentThread().getName();
             }
         }
-        return "ITEM NOT AVAILABLE" + Thread.currentThread().getName();
+        return "ITEM NOT AVAILABLE. " + Thread.currentThread().getName();
     }
 
 }

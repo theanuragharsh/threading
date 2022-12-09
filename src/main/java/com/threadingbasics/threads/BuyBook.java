@@ -18,6 +18,6 @@ public class BuyBook implements Runnable {
 
     @Override
     public void run() {
-        System.out.println("Buy Book -->" + sharedProductResource.buyProduct("Book") + "placing order..");
+        System.out.println("Buy Book -->" + "placing order.." + sharedProductResource.buyProduct("Book"));
     }
 }

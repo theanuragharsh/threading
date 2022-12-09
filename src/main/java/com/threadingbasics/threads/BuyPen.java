@@ -18,7 +18,7 @@ public class BuyPen extends Thread {
 
     @Override
     public void run() {
-        System.out.println("BuyPen --> " + sharedProductResource.buyProduct("Pen") + "placing order");
+        System.out.println("BuyPen --> " + "placing order " + sharedProductResource.buyProduct("Pen"));
     }
 
 }
