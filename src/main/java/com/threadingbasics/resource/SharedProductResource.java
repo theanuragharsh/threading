@@ -11,7 +11,7 @@ public class SharedProductResource {
     private Map<String, Integer> products = new HashMap<String, Integer>();
 
     public SharedProductResource() {
-        products.put("Pen", 10);
+        products.put("Pen", 5);
         products.put("Pencil", 50);
         products.put("Notebook", 150);
         products.put("Ruler Scales", 10);

@@ -18,10 +18,21 @@ public class ThreadingbasicsApplication {
 
         Thread thread1 = new Thread(buyBook, "student1");
         thread1.start();
+
         Thread thread3 = new Thread(buyBook, "student2");
         thread3.start();
+
         buyPen.setName("student3");
         buyPen.start();
+
+//        buyPen.setName("student4");
+//        buyPen.start();
+//
+//        buyPen.setName("student5");
+//        buyPen.start();
+//
+//        buyPen.setName("student6");
+//        buyPen.start();
     }
 
 }
