@@ -33,6 +33,10 @@ public class ThreadingbasicsApplication {
 //
 //        buyPen.setName("student6");
 //        buyPen.start();
+
+//        a thread can not be started multiple times i.e., a thread can be started only once
+
+
     }
 
 }
